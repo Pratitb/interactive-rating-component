@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Overpass", sans-serif;
+    background-color: rgb(18, 20, 23);
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.card_container{
+    display: flex;
+    align-items: center;
+}
+.card_wrap{
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #202730;
+}
+.feedback_wrap{
+    display: none;
+}
+.star_wrap{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    margin: 0 0 20px;
+    border-radius: 50%;
+    background-color: #282e37;
+}
+.head{
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+}
+.sub_head{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 15px 0 20px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+    color: #7e848e;
+}
+.ratings_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.ratings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50%;
+    color: #7e848e;
+    background-color: #282e37;
+}
+.ratings:hover{
+    color: #202730;
+    background-color: #fb7413;
+}
+.submit_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    margin: 25px 0 0;
+    letter-spacing: 1px;
+    border-radius: 40px;
+    color: #202730;
+    /* background-color: #fb7413; */
+    background-color: grey;
+    pointer-events: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.submit_btn:hover{
+    background-color: #fff;
+}
+
+.thank_you_card{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ratings_feedback{
+    font-size: 14px;
+    padding: 8px 15px;
+    margin: 20px 0 30px;
+    border-radius: 20px;
+    color: #fb7413;
+    background-color: #282e37;
+}
+.ty_sub_head{
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+/* media queries */
+@media screen and (min-width: 375px){
+    .ratings{
+        width: 45px;
+        height: 45px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .card_wrap{
+        max-width: 385px;
+        padding: 35px;
+    }
+}
+
+/* active class */
+.activeRating{
+    background-color: #fff;
+}
+.active_feedback_card{
+    display: block;
+}
+.active_ty_card{
+    display: flex;
+}
+/* .feedback_wrap{
+    display: none;
+} */
