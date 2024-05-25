@@ -84,9 +84,10 @@ body{
     letter-spacing: 1px;
     border-radius: 40px;
     color: #202730;
-    background-color: #fb7413;
-    /* background-color: grey; */
-    /* pointer-events: none; */
+    /* background-color: #fb7413; */
+    transition: 0.5s background-color;
+    background-color: grey;
+    pointer-events: none;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -136,6 +137,10 @@ body{
 }
 .active_ty_card{
     display: flex;
+}
+.active_submit_btn{
+    pointer-events: all;
+    background-color: #fb7413;
 }
 /* .feedback_wrap{
     display: none;
